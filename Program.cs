@@ -88,26 +88,20 @@ class Program
 
     static void GenerateXMLFileForControls(string pathxml, string baseDirectory, string version, List<string> controls)
     {
-        List<string> directoryPaths = new List<string>();
         foreach (var control in controls)
-        {
-            string path = Path.Combine("../../../Reports", version, control);
-            directoryPaths.Add(path);
-        }
-
+    {
+        string controlDirectory = Path.Combine("../../../Reports", version, control);
         List<string> xmlFiles = new List<string>();
-        foreach (var directoryPath in directoryPaths)
+
+        if (Directory.Exists(controlDirectory))
         {
-            if (Directory.Exists(directoryPath))
-            {
-                xmlFiles.AddRange(Directory.GetFiles(directoryPath, "*.xml"));
-            }
+            xmlFiles.AddRange(Directory.GetFiles(controlDirectory, "*.xml"));
         }
 
         if (xmlFiles.Count == 0)
         {
-            Console.WriteLine("No XML files found in the directories. Exiting...");
-            return;
+            Console.WriteLine($"No XML files found for control: {control}. Skipping...");
+            continue;
         }
 
         int totalTests = 0, passedTests = 0, failedTests = 0, skippedTests = 0;
@@ -152,20 +146,19 @@ class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error processing file {filePath}: {ex.Message}");
+                Console.WriteLine($"Error processing file {filePath} for control {control}: {ex.Message}");
             }
         }
 
-        // Generate HTML report
-        foreach (var control in controls)
-        {
-            var htmlpage = control+".html";
-        string outputFilePath = Path.Combine(baseDirectory, version,htmlpage);
+        // Generate a separate HTML report for this control
+        string htmlPage = control + ".html";
+        string outputFilePath = Path.Combine(baseDirectory, version, htmlPage);
+
         Directory.CreateDirectory(Path.GetDirectoryName(outputFilePath) ?? baseDirectory);
         File.WriteAllText(outputFilePath, GenerateHtmlReport(totalTests, passedTests, failedTests, skippedTests, totalDuration, controlResults));
 
-        Console.WriteLine($"HTML summary generated: {outputFilePath}");
-        }
+        Console.WriteLine($"HTML summary generated for control {control}: {outputFilePath}");
+    }
     }
 static void CreateVersionIndex(string versionPath, string version, List<string> controls)
     {
@@ -227,6 +220,7 @@ static void CreateVersionIndex(string versionPath, string version, List<string> 
 
     static string GenerateHtmlReport(int totalTests, int passedTests, int failedTests, int skippedTests, double totalDuration, Dictionary<string, (int total, int passed, int failed, int skipped)> controlResults)
     {
+        
         string htmlContent = $@"
 <!DOCTYPE html>
 <html lang='en'>
@@ -249,9 +243,20 @@ static void CreateVersionIndex(string versionPath, string version, List<string> 
     <p>Failed: <span class='failed'>{failedTests}</span></p>
     <p>Skipped: {skippedTests}</p>
     <p>Execution Time: {totalDuration:F2} seconds</p>
-</body>
-</html>";
-        return htmlContent;
+    <h3>Control-wise Summary</h3>
+    <table>
+        <tr>
+            <th>Test Name</th><th>Total</th><th>Passed</th><th>Failed</th><th>Skipped</th>
+        </tr>";
+
+    foreach (var control in controlResults)
+    {
+        htmlContent += $"<tr><td>{control.Key}</td><td>{control.Value.total}</td><td class='passed'>{control.Value.passed}</td><td class='failed'>{control.Value.failed}</td><td>{control.Value.skipped}</td></tr>\n";
+    }
+
+    htmlContent += "    </table>\n</body>\n</html>";
+
+    return htmlContent;
     }
      static void GenerateIndexHtml(List<string> versions, string filePath)
     {
