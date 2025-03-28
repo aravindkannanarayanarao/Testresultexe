@@ -1,19 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using System.Xml;
 using Microsoft.VisualBasic;
 
 class Program
 {
-    public static List<string> controls = new List<string>();  // Ensure list is initialized
-
+    public static List<string> controls
+    {
+        get
+        {
+            return new List<string>()
+            {
+                "SfAutocomplete",
+                "SfBarcode",
+                "SfButton",
+                "SfChip",
+                "SfListView",
+                "SfMaps",
+                "SfRating",
+                "SfSignaturePad"
+            };
+        }
+    }
+    public static Dictionary<string, (int total, int passed, int failed, int skipped)> controlver =
+    new Dictionary<string, (int, int, int, int)>();
+    // public static int total = 0, pass = 0, fail = 0, skipped = 0;
+    public static List<string> versions = new List<string>();
     static void Main(string[] args)
     {
         string filePath = "../../../index.html";
         string baseDirectory = "../../../ControlIndex";
-        string pathxml = @"../../../Reports/SfMaps";
-        List<string> versions = new List<string>();
+        string pathxml = "../../../Reports";
         string inputVersion = "";
 
         if (File.Exists(filePath))
@@ -42,6 +61,7 @@ class Program
         if (!string.IsNullOrEmpty(inputVersion))
         {
             GenerateXMLFileForControls(pathxml, baseDirectory, inputVersion, controls);
+
         }
     }
 
@@ -74,153 +94,222 @@ class Program
             Directory.CreateDirectory(versionPath);
         }
 
-        Console.WriteLine("Enter control names for version " + version + " (type 'done' to finish):");
+        List<string> userControls = new List<string>();
+        Console.WriteLine("Enter additional control names for version " + version + " (type 'done' to finish):");
+
         while (true)
         {
             string controlInput = Console.ReadLine()?.Trim();
             if (string.IsNullOrEmpty(controlInput) || controlInput.ToLower() == "done") break;
-            controls.Add(controlInput);
+            userControls.Add(controlInput);
         }
 
-        CreateVersionIndex(versionPath, version, controls);
-        Console.WriteLine("Updated folder: " + versionPath);
+        Console.WriteLine("Version folder created: " + versionPath);
+        Console.WriteLine("Controls included: " + string.Join(", ", controls.Concat(userControls)));
     }
 
     static void GenerateXMLFileForControls(string pathxml, string baseDirectory, string version, List<string> controls)
     {
         foreach (var control in controls)
-    {
-        string controlDirectory = Path.Combine("../../../Reports", version, control);
-        List<string> xmlFiles = new List<string>();
-
-        if (Directory.Exists(controlDirectory))
         {
-            xmlFiles.AddRange(Directory.GetFiles(controlDirectory, "*.xml"));
-        }
+            string controlDirectory = Path.Combine("../../../Reports", version, control);
+            string versionpath = Path.Combine("../../../ControlIndex", version);
+            List<string> xmlFiles = new List<string>();
 
-        if (xmlFiles.Count == 0)
-        {
-            Console.WriteLine($"No XML files found for control: {control}. Skipping...");
-            continue;
-        }
+            if (Directory.Exists(controlDirectory))
+            {
+                xmlFiles.AddRange(Directory.GetFiles(controlDirectory, "*.xml"));
+            }
 
-        int totalTests = 0, passedTests = 0, failedTests = 0, skippedTests = 0;
-        double totalDuration = 0;
-        var controlResults = new Dictionary<string, (int total, int passed, int failed, int skipped)>();
+            if (xmlFiles.Count == 0)
+            {
+                Console.WriteLine($"No XML files found for control: {control}. Skipping...");
+                continue;
+            }
 
-        foreach (string filePath in xmlFiles)
-        {
+            int totalTests = 0, passedTests = 0, failedTests = 0, skippedTests = 0;
+            double totalDuration = 0;
+            var controlResults = new Dictionary<string, (int total, int passed, int failed, int skipped)>();
+
+            foreach (string filePath in xmlFiles)
+            {
+                try
+                {
+                    XmlDocument xmlDoc = new XmlDocument();
+                    xmlDoc.Load(filePath);
+
+                    var countersNode = xmlDoc.GetElementsByTagName("Counters")[0];
+                    var timesNode = xmlDoc.GetElementsByTagName("Times")[0];
+                    var testCases = xmlDoc.GetElementsByTagName("UnitTestResult");
+
+                    totalTests += int.Parse(countersNode?.Attributes?["total"]?.Value ?? "0");
+                    passedTests += int.Parse(countersNode?.Attributes?["passed"]?.Value ?? "0");
+                    failedTests += int.Parse(countersNode?.Attributes?["failed"]?.Value ?? "0");
+                    skippedTests += int.Parse(countersNode?.Attributes?["skipped"]?.Value ?? "0");
+                    controlver[control]= (totalTests, passedTests, failedTests, skippedTests);
+                    DateTime startTime = DateTime.Parse(timesNode?.Attributes?["start"]?.Value ?? DateTime.Now.ToString());
+                    DateTime finishTime = DateTime.Parse(timesNode?.Attributes?["finish"]?.Value ?? DateTime.Now.ToString());
+                    totalDuration += (finishTime - startTime).TotalSeconds;
+
+                    foreach (XmlNode testCase in testCases)
+                    {
+                        string status = testCase.Attributes?["outcome"]?.Value;
+                        string testName = testCase.Attributes?["testName"]?.Value?.Split('_')[0] ?? "Unknown";
+
+                        if (!controlResults.ContainsKey(testName))
+                            controlResults[testName] = (0, 0, 0, 0);
+
+                        var (total, passed, failed, skipped) = controlResults[testName];
+                        total++;
+                        if (status == "Passed") passed++;
+                        if (status == "Failed") failed++;
+                        if (status == "Skipped") skipped++;
+                        controlResults[testName] = (total, passed, failed, skipped);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error processing file {filePath} for control {control}: {ex.Message}");
+                }
+            }
+            //Genarte controlm path index file with count table 
+
+            // Generate a separate HTML report for this control
+            string htmlPage = control + ".html";
+            string outputFilePath = Path.Combine(baseDirectory, version, htmlPage);
             try
             {
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load(filePath);
-
-                var countersNode = xmlDoc.GetElementsByTagName("Counters")[0];
-                var timesNode = xmlDoc.GetElementsByTagName("Times")[0];
-                var testCases = xmlDoc.GetElementsByTagName("UnitTestResult");
-
-                totalTests += int.Parse(countersNode?.Attributes?["total"]?.Value ?? "0");
-                passedTests += int.Parse(countersNode?.Attributes?["passed"]?.Value ?? "0");
-                failedTests += int.Parse(countersNode?.Attributes?["failed"]?.Value ?? "0");
-                skippedTests += int.Parse(countersNode?.Attributes?["skipped"]?.Value ?? "0");
-
-                DateTime startTime = DateTime.Parse(timesNode?.Attributes?["start"]?.Value ?? DateTime.Now.ToString());
-                DateTime finishTime = DateTime.Parse(timesNode?.Attributes?["finish"]?.Value ?? DateTime.Now.ToString());
-                totalDuration += (finishTime - startTime).TotalSeconds;
-
-                foreach (XmlNode testCase in testCases)
-                {
-                    string status = testCase.Attributes?["outcome"]?.Value;
-                    string testName = testCase.Attributes?["testName"]?.Value?.Split('_')[0] ?? "Unknown";
-
-                    if (!controlResults.ContainsKey(testName))
-                        controlResults[testName] = (0, 0, 0, 0);
-
-                    var (total, passed, failed, skipped) = controlResults[testName];
-                    total++;
-                    if (status == "Passed") passed++;
-                    if (status == "Failed") failed++;
-                    if (status == "Skipped") skipped++;
-                    controlResults[testName] = (total, passed, failed, skipped);
-                }
+                CreateVersionIndex(versionpath, version, controls, controlver);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error processing file {filePath} for control {control}: {ex.Message}");
+                Console.WriteLine("Unable to create control index HTML" + ex.ToString());
             }
+            Directory.CreateDirectory(Path.GetDirectoryName(outputFilePath) ?? baseDirectory);
+            File.WriteAllText(outputFilePath, GenerateHtmlReport(totalTests, passedTests, failedTests, skippedTests, totalDuration, controlResults));
+
+            Console.WriteLine($"HTML summary generated for control {control}: {outputFilePath}");
+
         }
-
-        // Generate a separate HTML report for this control
-        string htmlPage = control + ".html";
-        string outputFilePath = Path.Combine(baseDirectory, version, htmlPage);
-
-        Directory.CreateDirectory(Path.GetDirectoryName(outputFilePath) ?? baseDirectory);
-        File.WriteAllText(outputFilePath, GenerateHtmlReport(totalTests, passedTests, failedTests, skippedTests, totalDuration, controlResults));
-
-        Console.WriteLine($"HTML summary generated for control {control}: {outputFilePath}");
     }
-    }
-static void CreateVersionIndex(string versionPath, string version, List<string> controls)
+    static void CreateVersionIndex(string versionPath, string version, List<string> controls, Dictionary<string, (int total, int pass, int fail, int skipped)> controlResults)
     {
-        using (StreamWriter writer = new StreamWriter(Path.Combine(versionPath, "index.html")))
+        StringBuilder htmlcontent = new StringBuilder();
+        htmlcontent.AppendLine("<!DOCTYPE html>");
+        htmlcontent.AppendLine("<html lang=\"en\">");
+        htmlcontent.AppendLine("<head>");
+        htmlcontent.AppendLine(" <meta charset=\"UTF-8\">");
+        htmlcontent.AppendLine(" <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+        htmlcontent.AppendLine(" <title>MAUI Syncfusion Controls - Test Reports</title>");
+        htmlcontent.AppendLine(" <style>");
+        htmlcontent.AppendLine(" body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }");
+        htmlcontent.AppendLine(" table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }");
+        htmlcontent.AppendLine(" th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }");
+        htmlcontent.AppendLine(" th { background-color: #007bff; color: white; }");
+        htmlcontent.AppendLine(" .passed { color: green; font-weight: bold; }");
+        htmlcontent.AppendLine(" .failed { color: red; font-weight: bold; }");
+        htmlcontent.AppendLine(" .skipped { color: orange; font-weight: bold; }");
+        htmlcontent.AppendLine(" a { text-decoration: none; color: #007bff; font-weight: bold; }");
+        htmlcontent.AppendLine(" a:hover { text-decoration: underline; }");
+        htmlcontent.AppendLine(" </style>");
+        htmlcontent.AppendLine("</head>");
+        htmlcontent.AppendLine("<body>");
+        htmlcontent.AppendLine($" <h2 style=\"text-align: center;\">MAUI Syncfusion Controls - Test Reports (Version {version})</h2>");
+        htmlcontent.AppendLine(" <h3>Test Summary</h3>");
+        htmlcontent.AppendLine(" <table>");
+        htmlcontent.AppendLine(" <thead>");
+        htmlcontent.AppendLine(" <tr>");
+        htmlcontent.AppendLine(" <th>Control Name</th>");
+        htmlcontent.AppendLine(" <th>Test Cases</th>");
+        htmlcontent.AppendLine(" <th>Passed</th>");
+        htmlcontent.AppendLine(" <th>Failed</th>");
+        htmlcontent.AppendLine(" <th>Skipped</th>");
+        htmlcontent.AppendLine(" </tr>");
+        htmlcontent.AppendLine(" </thead>");
+        htmlcontent.AppendLine(" <tbody>");
+        foreach (var control in controls)
         {
-            writer.WriteLine("<!DOCTYPE html>");
-            writer.WriteLine("<html lang=\"en\">");
-            writer.WriteLine("<head>");
-            writer.WriteLine("    <meta charset=\"UTF-8\">");
-            writer.WriteLine("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
-            writer.WriteLine("    <title>MAUI Syncfusion Controls - Test Reports</title>");
-            writer.WriteLine("    <style>");
-            writer.WriteLine("        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }");
-            writer.WriteLine("        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }");
-            writer.WriteLine("        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }");
-            writer.WriteLine("        th { background-color: #007bff; color: white; }");
-            writer.WriteLine("        .passed { color: green; font-weight: bold; }");
-            writer.WriteLine("        .failed { color: red; font-weight: bold; }");
-            writer.WriteLine("        a { text-decoration: none; color: #007bff; font-weight: bold; }");
-            writer.WriteLine("        a:hover { text-decoration: underline; }");
-            writer.WriteLine("    </style>");
-            writer.WriteLine("</head>");
-            writer.WriteLine("<body>");
-            writer.WriteLine($"    <h2 style=\"text-align: center;\">MAUI Syncfusion Controls - Test Reports (Version {version})</h2>");
-            writer.WriteLine("    <h3>Test Summary</h3>");
-            writer.WriteLine("    <table>");
-            writer.WriteLine("        <thead>");
-            writer.WriteLine("            <tr>");
-            writer.WriteLine("                <th>Control Name</th>");
-            writer.WriteLine("                <th>Test Cases</th>");
-            writer.WriteLine("                <th>Passed</th>");
-            writer.WriteLine("                <th>Failed</th>");
-            writer.WriteLine("                <th>Skipped</th>");
-            writer.WriteLine("            </tr>");
-            writer.WriteLine("        </thead>");
-            writer.WriteLine("        <tbody>");
-            
-            foreach (var control in controls)
-            {
-                writer.WriteLine($"            <tr>");
-                writer.WriteLine($"                <td><a href='{control}.html'>{control}</a></td>");
-                writer.WriteLine($"                <td>0</td>");
-                writer.WriteLine($"                <td class='passed'>0</td>");
-                writer.WriteLine($"                <td class='failed'>0</td>");
-                writer.WriteLine($"                <td>0</td>");
-                writer.WriteLine($"            </tr>");
-            }
-            
-            
-            writer.WriteLine("        </tbody>");
-            writer.WriteLine("    </table>");
-            writer.WriteLine("</body>");
-            writer.WriteLine("</html>");
+            var (total, pass, fail, skipped) = controlResults.ContainsKey(control) ? controlResults[control] : (0, 0, 0, 0);
+            htmlcontent.AppendLine($@"
+        <tr>
+            <td><a href='{control}.html'>{control}</a></td>
+            <td>{total}</td>
+            <td class='passed'>{pass}</td>
+            <td class='failed'>{fail}</td>
+            <td class='skipped'>{skipped}</td>
+        </tr>");
         }
+        htmlcontent.AppendLine(" </tbody>");
+        htmlcontent.AppendLine(" </table>");
+        htmlcontent.AppendLine("</body>");
+        htmlcontent.AppendLine("</html>");
+        File.WriteAllText(Path.Combine(versionPath, "index.html"), htmlcontent.ToString());
     }
+
+
+    //static void CreateVersionIndex(string versionPath, string version, List<string> controls, int total, int pass, int fail, int skipped)
+    //{
+    //    StringBuilder htmlcontent = new StringBuilder();
+
+    //    htmlcontent.AppendLine("<!DOCTYPE html>");
+    //    htmlcontent.AppendLine("<html lang=\"en\">");
+    //    htmlcontent.AppendLine("<head>");
+    //    htmlcontent.AppendLine("    <meta charset=\"UTF-8\">");
+    //    htmlcontent.AppendLine("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+    //    htmlcontent.AppendLine("    <title>MAUI Syncfusion Controls - Test Reports</title>");
+    //    htmlcontent.AppendLine("    <style>");
+    //    htmlcontent.AppendLine("        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }");
+    //    htmlcontent.AppendLine("        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }");
+    //    htmlcontent.AppendLine("        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }");
+    //    htmlcontent.AppendLine("        th { background-color: #007bff; color: white; }");
+    //    htmlcontent.AppendLine("        .passed { color: green; font-weight: bold; }");
+    //    htmlcontent.AppendLine("        .failed { color: red; font-weight: bold; }");
+    //    htmlcontent.AppendLine("        .skipped { color: orange; font-weight: bold; }");
+    //    htmlcontent.AppendLine("        a { text-decoration: none; color: #007bff; font-weight: bold; }");
+    //    htmlcontent.AppendLine("        a:hover { text-decoration: underline; }");
+    //    htmlcontent.AppendLine("    </style>");
+    //    htmlcontent.AppendLine("</head>");
+    //    htmlcontent.AppendLine("<body>");
+    //    htmlcontent.AppendLine($"    <h2 style=\"text-align: center;\">MAUI Syncfusion Controls - Test Reports (Version {version})</h2>");
+    //    htmlcontent.AppendLine("    <h3>Test Summary</h3>");
+    //    htmlcontent.AppendLine("    <table>");
+    //    htmlcontent.AppendLine("        <thead>");
+    //    htmlcontent.AppendLine("            <tr>");
+    //    htmlcontent.AppendLine("                <th>Control Name</th>");
+    //    htmlcontent.AppendLine("                <th>Test Cases</th>");
+    //    htmlcontent.AppendLine("                <th>Passed</th>");
+    //    htmlcontent.AppendLine("                <th>Failed</th>");
+    //    htmlcontent.AppendLine("                <th>Skipped</th>");
+    //    htmlcontent.AppendLine("            </tr>");
+    //    htmlcontent.AppendLine("        </thead>");
+    //    htmlcontent.AppendLine("        <tbody>");
+
+    //    foreach (var control in controls)
+    //    {
+    //        htmlcontent.AppendLine($@"            <tr>
+    //            <td><a href='{control}.html'>{control}</a></td>
+    //            <td>{total}</td>
+    //            <td class='passed'>{pass}</td>
+    //            <td class='failed'>{fail}</td>
+    //            <td class='skipped'>{skipped}</td>
+    //        </tr>");
+    //    }
+
+    //    htmlcontent.AppendLine("        </tbody>");
+    //    htmlcontent.AppendLine("    </table>");
+    //    htmlcontent.AppendLine("</body>");
+    //    htmlcontent.AppendLine("</html>");
+
+    //    File.WriteAllText(Path.Combine(versionPath, "index.html"), htmlcontent.ToString());
+    //}
+
 
 
 
 
     static string GenerateHtmlReport(int totalTests, int passedTests, int failedTests, int skippedTests, double totalDuration, Dictionary<string, (int total, int passed, int failed, int skipped)> controlResults)
     {
-        
+
         string htmlContent = $@"
 <!DOCTYPE html>
 <html lang='en'>
@@ -249,16 +338,16 @@ static void CreateVersionIndex(string versionPath, string version, List<string> 
             <th>Test Name</th><th>Total</th><th>Passed</th><th>Failed</th><th>Skipped</th>
         </tr>";
 
-    foreach (var control in controlResults)
-    {
-        htmlContent += $"<tr><td>{control.Key}</td><td>{control.Value.total}</td><td class='passed'>{control.Value.passed}</td><td class='failed'>{control.Value.failed}</td><td>{control.Value.skipped}</td></tr>\n";
-    }
+        foreach (var control in controlResults)
+        {
+            htmlContent += $"<tr><td>{control.Key}</td><td>{control.Value.total}</td><td class='passed'>{control.Value.passed}</td><td class='failed'>{control.Value.failed}</td><td>{control.Value.skipped}</td></tr>\n";
+        }
 
-    htmlContent += "    </table>\n</body>\n</html>";
+        htmlContent += "    </table>\n</body>\n</html>";
 
-    return htmlContent;
+        return htmlContent;
     }
-     static void GenerateIndexHtml(List<string> versions, string filePath)
+    static void GenerateIndexHtml(List<string> versions, string filePath)
     {
         using (StreamWriter writer = new StreamWriter(filePath))
         {
@@ -286,7 +375,7 @@ static void CreateVersionIndex(string versionPath, string version, List<string> 
             {
                 writer.WriteLine($"        <li><a href='ControlIndex/{version}/index.html'>{version}</a></li>");
             }
-            
+
             writer.WriteLine("    </ul>");
             writer.WriteLine("</body>");
             writer.WriteLine("</html>");

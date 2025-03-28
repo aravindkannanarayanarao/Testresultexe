@@ -1,165 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="9a0f273e-3ece-4fcc-8974-d2f27c5d10eb" name="AzDevOps@windows-v0000F9 2025-03-26 07:55:49" runUser="windows-v0000F9\AzDevOps" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2025-03-26T07:55:49.7487028+00:00" queuing="2025-03-26T07:55:49.7487032+00:00" start="2025-03-26T07:55:11.2575202+00:00" finish="2025-03-26T08:05:11.8044004+00:00" />
-  <TestSettings name="default" id="b540f166-8651-4937-aa66-c89b5a03364c">
-    <Deployment runDeploymentRoot="AzDevOps_windows-v0000F9_2025-03-26_07_55_49" />
+<TestRun id="5c53fbcd-7f36-46ae-b0b8-c9c38d13e69c" name="AzDevOps@WINDOWS-V0000HD 2025-03-27 08:05:11" runUser="WINDOWS-V0000HD\AzDevOps" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-03-27T08:05:11.3191789+00:00" queuing="2025-03-27T08:05:11.3191792+00:00" start="2025-03-27T08:04:35.3502522+00:00" finish="2025-03-27T08:13:47.4123854+00:00" />
+  <TestSettings name="default" id="638b9f39-0404-4fbd-801a-0183483a7510">
+    <Deployment runDeploymentRoot="AzDevOps_WINDOWS-V0000HD_2025-03-27_08_05_11" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="52c27885-5ca8-4752-b749-1968abd087e7" testId="3a89b028-7200-ed89-fea1-c967e4254e4f" testName="Feature_2" computerName="windows-v0000F9" duration="00:00:20.5509790" startTime="2025-03-26T07:56:51.6734086+00:00" endTime="2025-03-26T07:57:12.2245772+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52c27885-5ca8-4752-b749-1968abd087e7">
+    <UnitTestResult executionId="75327bb7-e2bf-44f4-afd9-902b281a4146" testId="7f1fc60c-b20d-f307-8a67-fc9962bea82e" testName="Strokecolor_7" computerName="WINDOWS-V0000HD" duration="00:00:16.3996110" startTime="2025-03-27T08:11:18.1134489+00:00" endTime="2025-03-27T08:11:34.5128415+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75327bb7-e2bf-44f4-afd9-902b281a4146">
       <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_2-diff.png</StdOut>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_7-diff.png</StdOut>
         <ErrorInfo>
           <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Feature_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 608&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_7() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 291&#xD;
 
 1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Feature_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 608&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_7() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 291&#xD;
 
 </StackTrace>
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="d8dfb983-f01e-4270-9d57-2c1d8e8427af" testId="2fff5368-9723-74a1-895d-11869ea0e7ca" testName="Strokecolor_2" computerName="windows-v0000F9" duration="00:00:16.5197960" startTime="2025-03-26T08:01:08.6696158+00:00" endTime="2025-03-26T08:01:25.1895402+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8dfb983-f01e-4270-9d57-2c1d8e8427af">
+    <UnitTestResult executionId="41cc5ba9-f706-4537-89ea-7f31cd9b2a8f" testId="593806ff-1cc1-1968-470a-21a17418139f" testName="Save_1" computerName="WINDOWS-V0000HD" duration="00:00:15.1903720" startTime="2025-03-27T08:07:46.7739994+00:00" endTime="2025-03-27T08:08:01.9645124+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41cc5ba9-f706-4537-89ea-7f31cd9b2a8f">
       <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_2-diff.png</StdOut>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Save_1-diff.png</StdOut>
         <ErrorInfo>
           <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 150&#xD;
+   at SfSignaturePadScripts.Feature.Save_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 505&#xD;
 
 1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 150&#xD;
+   at SfSignaturePadScripts.Feature.Save_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 505&#xD;
 
 </StackTrace>
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="9dfd9685-8e95-4c39-b49b-d7a8f6394fac" testId="9394240a-5a71-72b4-4720-f7665ef7e437" testName="Strokeminimumthickness_3" computerName="windows-v0000F9" duration="00:00:17.6602800" startTime="2025-03-26T08:04:37.6937547+00:00" endTime="2025-03-26T08:04:55.3543235+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9dfd9685-8e95-4c39-b49b-d7a8f6394fac">
+    <UnitTestResult executionId="23df6077-bcfc-4cc7-a437-71da2693a8d3" testId="badba7d3-360f-83f4-2ec9-85b55c1bada5" testName="GridTesting_1" computerName="WINDOWS-V0000HD" duration="00:00:16.6153500" startTime="2025-03-27T08:07:15.4657721+00:00" endTime="2025-03-27T08:07:32.0814725+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23df6077-bcfc-4cc7-a437-71da2693a8d3">
       <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_3-diff.png</StdOut>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\GridTesting_1-diff.png</StdOut>
         <ErrorInfo>
           <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokeminimumthickness_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 397&#xD;
+   at SfSignaturePadScripts.Feature.GridTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 778&#xD;
 
 1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokeminimumthickness_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 397&#xD;
+   at SfSignaturePadScripts.Feature.GridTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 778&#xD;
 
 </StackTrace>
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="f6fd48f7-de3f-45b2-b8f7-de166c9e01a5" testId="effca500-5153-cb71-0c00-7e391cb252a9" testName="Strokemaximumthickness_1" computerName="windows-v0000F9" duration="00:00:16.1850290" startTime="2025-03-26T08:03:13.6251780+00:00" endTime="2025-03-26T08:03:29.8103454+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6fd48f7-de3f-45b2-b8f7-de166c9e01a5">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokemaximumthickness_1-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokemaximumthickness_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 423&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokemaximumthickness_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 423&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="ba0f9d68-8be0-4542-9f57-310ea448ffac" testId="bdf9aeec-d189-6ff9-d11b-754c10fd2745" testName="Strokecolor_3" computerName="windows-v0000F9" duration="00:00:19.8109910" startTime="2025-03-26T08:01:25.1960040+00:00" endTime="2025-03-26T08:01:45.0074186+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba0f9d68-8be0-4542-9f57-310ea448ffac">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_3-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 178&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 178&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="3f2f8ef9-2b99-4e6b-be6e-bd5775134b5f" testId="7feee788-ce09-8a55-04c8-f7c0da8e3daf" testName="Save_2" computerName="windows-v0000F9" duration="00:00:16.3563530" startTime="2025-03-26T07:59:05.8897239+00:00" endTime="2025-03-26T07:59:22.2462766+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f2f8ef9-2b99-4e6b-be6e-bd5775134b5f">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Save_2-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Save_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 529&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Save_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 529&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="889a4ac8-e4cb-472b-be36-fa0068a7e716" testId="30de4fd4-fd21-7940-dbf5-10826177efdb" testName="Strokeminimumthickness_2" computerName="windows-v0000F9" duration="00:00:19.1122540" startTime="2025-03-26T08:04:18.5793663+00:00" endTime="2025-03-26T08:04:37.6919143+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="889a4ac8-e4cb-472b-be36-fa0068a7e716">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_2-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokeminimumthickness_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 371&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokeminimumthickness_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 371&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="05cd03c8-e820-41c8-aa3a-fbd83625fb49" testId="046ecf90-b929-32ac-35ff-6959bad1e033" testName="ClearSignature_1" computerName="windows-v0000F9" duration="00:00:22.6936490" startTime="2025-03-26T07:55:49.6637080+00:00" endTime="2025-03-26T07:56:12.3576477+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05cd03c8-e820-41c8-aa3a-fbd83625fb49">
-      <Output>
-        <StdOut>No differences found.</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="ef861832-46e6-4810-aa93-b8c5e0a80c83" testId="3bc75c58-30b5-eeaf-139b-188e241e4eea" testName="Signature_1" computerName="windows-v0000F9" duration="00:00:18.1687559" startTime="2025-03-26T07:59:40.8680813+00:00" endTime="2025-03-26T07:59:59.0371503+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef861832-46e6-4810-aa93-b8c5e0a80c83">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Signature_1-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Signature_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 34&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Signature_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 34&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="6f336037-80f9-4e35-8550-5aff72670f15" testId="f02f0482-9e47-5331-9ec1-62e6c16a65a3" testName="HorizontalStackTesting_1" computerName="windows-v0000F9" duration="00:00:16.1951460" startTime="2025-03-26T07:58:32.3247765+00:00" endTime="2025-03-26T07:58:48.5201743+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f336037-80f9-4e35-8550-5aff72670f15">
-      <Output>
-        <StdOut>No differences found.</StdOut>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="1b01f4cc-2414-46e1-abc9-05d569995ecc" testId="898626a1-2674-5503-d7f7-f04d6937878a" testName="Signature_3" computerName="windows-v0000F9" duration="00:00:18.0771810" startTime="2025-03-26T08:00:17.0035930+00:00" endTime="2025-03-26T08:00:35.0811349+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b01f4cc-2414-46e1-abc9-05d569995ecc">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Signature_3-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Signature_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 73&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Signature_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 73&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="b567045e-abeb-4693-8a32-f74b064992be" testId="721e194e-0328-dfb3-6c79-a03f95e2162c" testName="BorderTesting_1" computerName="windows-v0000F9" duration="00:00:17.5134510" startTime="2025-03-26T07:55:32.1433301+00:00" endTime="2025-03-26T07:55:49.6569505+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b567045e-abeb-4693-8a32-f74b064992be">
+    <UnitTestResult executionId="9aa01b0a-6425-4eec-8014-c3f770d11c57" testId="721e194e-0328-dfb3-6c79-a03f95e2162c" testName="BorderTesting_1" computerName="WINDOWS-V0000HD" duration="00:00:18.4224510" startTime="2025-03-27T08:04:52.8180152+00:00" endTime="2025-03-27T08:05:11.2401798+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9aa01b0a-6425-4eec-8014-c3f770d11c57">
       <Output>
         <StdOut>Directory created &#xD;
 Diff Directory created &#xD;
@@ -177,87 +71,7 @@ Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITES
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="6e281c7c-c5bd-498a-9681-8f517b9d1e59" testId="19de06d4-1512-aa57-d9e1-6ca2e8ae5c71" testName="Strokecolor_5" computerName="windows-v0000F9" duration="00:00:18.0238690" startTime="2025-03-26T08:02:02.2834249+00:00" endTime="2025-03-26T08:02:20.3075385+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e281c7c-c5bd-498a-9681-8f517b9d1e59">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_5-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_5() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 234&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_5() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 234&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="c32a9e43-51c4-4b16-92d9-cda5941dd3bf" testId="badba7d3-360f-83f4-2ec9-85b55c1bada5" testName="GridTesting_1" computerName="windows-v0000F9" duration="00:00:16.0878590" startTime="2025-03-26T07:58:16.2338640+00:00" endTime="2025-03-26T07:58:32.3219690+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c32a9e43-51c4-4b16-92d9-cda5941dd3bf">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\GridTesting_1-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.GridTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 778&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.GridTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 778&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="dafb0760-f871-4489-8dd0-a82194627dd1" testId="5e86ad35-08f3-952e-9b04-4d4c6707ca47" testName="Feature_3" computerName="windows-v0000F9" duration="00:00:25.8643280" startTime="2025-03-26T07:57:12.2251140+00:00" endTime="2025-03-26T07:57:38.0899723+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dafb0760-f871-4489-8dd0-a82194627dd1">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_3-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Feature_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 651&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Feature_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 651&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="20937e00-100a-4245-bebd-900ae06edc12" testId="893973a4-9e17-6e3e-2818-4ceb8485340b" testName="Feature_4" computerName="windows-v0000F9" duration="00:00:23.2996350" startTime="2025-03-26T07:57:38.0936193+00:00" endTime="2025-03-26T07:58:01.3936893+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20937e00-100a-4245-bebd-900ae06edc12">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_4-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Feature_4() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 694&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Feature_4() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 694&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="ae3614f1-d026-44e4-b3cc-9ec1633980a0" testId="899f05fe-ab13-2cd6-acd6-6f383c5e9425" testName="Strokecolor_6" computerName="windows-v0000F9" duration="00:00:17.6870010" startTime="2025-03-26T08:02:20.3076232+00:00" endTime="2025-03-26T08:02:37.9948951+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae3614f1-d026-44e4-b3cc-9ec1633980a0">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_6-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_6() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 262&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_6() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 262&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="00a816e1-ded9-4f1a-8dda-a914924a74b0" testId="6c7107d3-e1ff-77f3-4dba-81fdbf53df7e" testName="Strokemaximumthickness_3" computerName="windows-v0000F9" duration="00:00:15.3403090" startTime="2025-03-26T08:03:47.3568458+00:00" endTime="2025-03-26T08:04:02.6974771+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00a816e1-ded9-4f1a-8dda-a914924a74b0">
+    <UnitTestResult executionId="aefebf12-a054-46ea-8bb7-d482ddfe703f" testId="6c7107d3-e1ff-77f3-4dba-81fdbf53df7e" testName="Strokemaximumthickness_3" computerName="WINDOWS-V0000HD" duration="00:00:15.2025010" startTime="2025-03-27T08:12:24.0235970+00:00" endTime="2025-03-27T08:12:39.2259073+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aefebf12-a054-46ea-8bb7-d482ddfe703f">
       <Output>
         <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokemaximumthickness_3-diff.png</StdOut>
         <ErrorInfo>
@@ -273,23 +87,71 @@ Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITES
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="5077961c-d07d-4cc4-b314-a6e7934b202d" testId="593806ff-1cc1-1968-470a-21a17418139f" testName="Save_1" computerName="windows-v0000F9" duration="00:00:17.3645580" startTime="2025-03-26T07:58:48.5213670+00:00" endTime="2025-03-26T07:59:05.8860380+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5077961c-d07d-4cc4-b314-a6e7934b202d">
+    <UnitTestResult executionId="15ef0e88-29d0-4d88-becf-362802c65daa" testId="19de06d4-1512-aa57-d9e1-6ca2e8ae5c71" testName="Strokecolor_5" computerName="WINDOWS-V0000HD" duration="00:00:17.3279880" startTime="2025-03-27T08:10:41.9988024+00:00" endTime="2025-03-27T08:10:59.3265535+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15ef0e88-29d0-4d88-becf-362802c65daa">
       <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Save_1-diff.png</StdOut>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_5-diff.png</StdOut>
         <ErrorInfo>
           <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Save_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 505&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_5() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 234&#xD;
 
 1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Save_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 505&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_5() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 234&#xD;
 
 </StackTrace>
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="b263fa3c-e9ab-4a9a-a06b-21b28274379b" testId="18fddcae-1b8b-bd4f-d757-a84e185dd1dc" testName="Strokemaximumthickness_2" computerName="windows-v0000F9" duration="00:00:17.5396610" startTime="2025-03-26T08:03:29.8167157+00:00" endTime="2025-03-26T08:03:47.3567045+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b263fa3c-e9ab-4a9a-a06b-21b28274379b">
+    <UnitTestResult executionId="ace3b81f-2586-49c7-8327-beedccf264f2" testId="899f05fe-ab13-2cd6-acd6-6f383c5e9425" testName="Strokecolor_6" computerName="WINDOWS-V0000HD" duration="00:00:18.7824470" startTime="2025-03-27T08:10:59.3310699+00:00" endTime="2025-03-27T08:11:18.1133822+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ace3b81f-2586-49c7-8327-beedccf264f2">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_6-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_6() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 262&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_6() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 262&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cf148f84-292e-40d7-b6eb-f23f68548806" testId="3a89b028-7200-ed89-fea1-c967e4254e4f" testName="Feature_2" computerName="WINDOWS-V0000HD" duration="00:00:17.1126210" startTime="2025-03-27T08:06:00.6279263+00:00" endTime="2025-03-27T08:06:17.7403337+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf148f84-292e-40d7-b6eb-f23f68548806">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_2-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Feature_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 608&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Feature_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 608&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6308146b-972b-4dfa-9d6f-998286b074f4" testId="893973a4-9e17-6e3e-2818-4ceb8485340b" testName="Feature_4" computerName="WINDOWS-V0000HD" duration="00:00:24.1232830" startTime="2025-03-27T08:06:35.8622384+00:00" endTime="2025-03-27T08:06:59.9852763+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6308146b-972b-4dfa-9d6f-998286b074f4">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_4-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Feature_4() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 694&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Feature_4() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 694&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f1e53d5e-3673-426d-9fa6-5921d5851221" testId="18fddcae-1b8b-bd4f-d757-a84e185dd1dc" testName="Strokemaximumthickness_2" computerName="WINDOWS-V0000HD" duration="00:00:17.2905970" startTime="2025-03-27T08:12:06.7331035+00:00" endTime="2025-03-27T08:12:24.0235138+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1e53d5e-3673-426d-9fa6-5921d5851221">
       <Output>
         <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokemaximumthickness_2-diff.png</StdOut>
         <ErrorInfo>
@@ -305,108 +167,97 @@ Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITES
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="ca5192ad-f45d-433f-8a42-08bf6621cc90" testId="66e33877-507a-8fec-ed84-16c6080248d8" testName="StackLayoutTesting_1" computerName="windows-v0000F9" duration="00:00:16.2043779" startTime="2025-03-26T08:00:35.0836289+00:00" endTime="2025-03-26T08:00:51.2882989+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca5192ad-f45d-433f-8a42-08bf6621cc90">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\StackLayoutTesting_1-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.StackLayoutTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 815&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.StackLayoutTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 815&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="0335212d-a15e-423f-ae3f-98bbf2e5e222" testId="f8dda9aa-3654-b282-f04d-3039e4a66708" testName="Strokecolor_8" computerName="windows-v0000F9" duration="00:00:18.2959720" startTime="2025-03-26T08:02:55.3221437+00:00" endTime="2025-03-26T08:03:13.6184239+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0335212d-a15e-423f-ae3f-98bbf2e5e222">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_8-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_8() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 320&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_8() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 320&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="ad800064-ad4e-4c06-8b14-8efb2aad0ccb" testId="99c1b4b7-4b3b-c360-6935-b8a7fed7145b" testName="Strokecolor_1" computerName="windows-v0000F9" duration="00:00:17.3794739" startTime="2025-03-26T08:00:51.2897555+00:00" endTime="2025-03-26T08:01:08.6695179+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad800064-ad4e-4c06-8b14-8efb2aad0ccb">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_1-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 122&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 122&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="b3c60eee-3bd7-425e-8702-51eadab9a037" testId="416a8415-104f-1552-35e2-41aced4bb3f1" testName="VerticalStackTesting_1" computerName="windows-v0000F9" duration="00:00:16.1362900" startTime="2025-03-26T08:04:55.3566187+00:00" endTime="2025-03-26T08:05:11.4931708+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3c60eee-3bd7-425e-8702-51eadab9a037">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\VerticalStackTesting_1-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.VerticalStackTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 833&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.VerticalStackTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 833&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="b81e1860-c555-47f6-911f-2209826c11d8" testId="dd9cebf1-0c57-630a-6af4-7dce4f05ecec" testName="Strokeminimumthickness_1" computerName="windows-v0000F9" duration="00:00:15.8722650" startTime="2025-03-26T08:04:02.6975457+00:00" endTime="2025-03-26T08:04:18.5700972+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b81e1860-c555-47f6-911f-2209826c11d8">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_1-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokeminimumthickness_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 346&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokeminimumthickness_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 346&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="9240d2f4-6328-4931-b427-5812c56f30d7" testId="7f1fc60c-b20d-f307-8a67-fc9962bea82e" testName="Strokecolor_7" computerName="windows-v0000F9" duration="00:00:17.3265970" startTime="2025-03-26T08:02:37.9951365+00:00" endTime="2025-03-26T08:02:55.3220872+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9240d2f4-6328-4931-b427-5812c56f30d7">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_7-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_7() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 291&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_7() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 291&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="46664649-4ece-4080-b3fc-f591dcf4f9cc" testId="8f6b5c82-4710-4ac7-81cf-79c91e849d45" testName="FrameTesting_1" computerName="windows-v0000F9" duration="00:00:14.8317360" startTime="2025-03-26T07:58:01.3984126+00:00" endTime="2025-03-26T07:58:16.2303858+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46664649-4ece-4080-b3fc-f591dcf4f9cc">
+    <UnitTestResult executionId="3c49d197-2aa9-493b-9457-bab0f17a2c83" testId="8f6b5c82-4710-4ac7-81cf-79c91e849d45" testName="FrameTesting_1" computerName="WINDOWS-V0000HD" duration="00:00:15.4764480" startTime="2025-03-27T08:06:59.9885554+00:00" endTime="2025-03-27T08:07:15.4630003+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c49d197-2aa9-493b-9457-bab0f17a2c83">
       <Output>
         <StdOut>No differences found.</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="20aa2449-8c9e-4694-9f42-068f597e6792" testId="9d565ada-fdb8-cbdb-b2d7-29a814dc4a82" testName="Feature_1" computerName="windows-v0000F9" duration="00:00:21.5730950" startTime="2025-03-26T07:56:30.0981413+00:00" endTime="2025-03-26T07:56:51.6716132+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20aa2449-8c9e-4694-9f42-068f597e6792">
+    <UnitTestResult executionId="8b14361e-44ca-4b9f-bbc4-2c4dafd3b1df" testId="5e86ad35-08f3-952e-9b04-4d4c6707ca47" testName="Feature_3" computerName="WINDOWS-V0000HD" duration="00:00:18.1133640" startTime="2025-03-27T08:06:17.7458904+00:00" endTime="2025-03-27T08:06:35.8589506+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b14361e-44ca-4b9f-bbc4-2c4dafd3b1df">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_3-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Feature_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 651&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Feature_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 651&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cfb922df-456d-4ed4-b07e-eed13cf5c6c5" testId="9394240a-5a71-72b4-4720-f7665ef7e437" testName="Strokeminimumthickness_3" computerName="WINDOWS-V0000HD" duration="00:00:18.9936890" startTime="2025-03-27T08:13:11.6604109+00:00" endTime="2025-03-27T08:13:30.6538715+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cfb922df-456d-4ed4-b07e-eed13cf5c6c5">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_3-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokeminimumthickness_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 397&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokeminimumthickness_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 397&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="14a4f373-c01d-4763-829a-4ae2288b4fa3" testId="effca500-5153-cb71-0c00-7e391cb252a9" testName="Strokemaximumthickness_1" computerName="WINDOWS-V0000HD" duration="00:00:15.3421910" startTime="2025-03-27T08:11:51.3910098+00:00" endTime="2025-03-27T08:12:06.7330368+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14a4f373-c01d-4763-829a-4ae2288b4fa3">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokemaximumthickness_1-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokemaximumthickness_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 423&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokemaximumthickness_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 423&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c895f38-cf30-4d4c-a377-a926f55d8dfb" testId="898626a1-2674-5503-d7f7-f04d6937878a" testName="Signature_3" computerName="WINDOWS-V0000HD" duration="00:00:15.5059120" startTime="2025-03-27T08:09:04.4137857+00:00" endTime="2025-03-27T08:09:19.9195014+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c895f38-cf30-4d4c-a377-a926f55d8dfb">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Signature_3-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Signature_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 73&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Signature_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 73&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7ba74424-72e5-40a8-9de3-84d01168e268" testId="2fff5368-9723-74a1-895d-11869ea0e7ca" testName="Strokecolor_2" computerName="WINDOWS-V0000HD" duration="00:00:16.2689520" startTime="2025-03-27T08:09:50.9674147+00:00" endTime="2025-03-27T08:10:07.2361527+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ba74424-72e5-40a8-9de3-84d01168e268">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_2-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 150&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 150&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a003710a-546a-42bc-9112-df81e28dad91" testId="f66816ac-fccc-b63f-e701-9bc49d73a2fa" testName="Save_3" computerName="WINDOWS-V0000HD" duration="00:00:16.9430500" startTime="2025-03-27T08:08:17.0948967+00:00" endTime="2025-03-27T08:08:34.0377549+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a003710a-546a-42bc-9112-df81e28dad91">
+      <Output>
+        <StdOut>No differences found.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="41000a02-d985-4ea6-bc8e-5b3ef3e4def6" testId="9d565ada-fdb8-cbdb-b2d7-29a814dc4a82" testName="Feature_1" computerName="WINDOWS-V0000HD" duration="00:00:17.1690760" startTime="2025-03-27T08:05:43.4585178+00:00" endTime="2025-03-27T08:06:00.6274149+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41000a02-d985-4ea6-bc8e-5b3ef3e4def6">
       <Output>
         <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_1-diff.png</StdOut>
         <ErrorInfo>
@@ -422,44 +273,124 @@ Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITES
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="c84bc252-f317-4794-b0bb-5ff0a93d1307" testId="70175124-4ac9-acc2-e858-fe4c5b8c6784" testName="Strokecolor_4" computerName="windows-v0000F9" duration="00:00:17.2685040" startTime="2025-03-26T08:01:45.0108330+00:00" endTime="2025-03-26T08:02:02.2796722+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c84bc252-f317-4794-b0bb-5ff0a93d1307">
+    <UnitTestResult executionId="e4437392-80ec-4fbc-9119-e8a6fc942b51" testId="dd9cebf1-0c57-630a-6af4-7dce4f05ecec" testName="Strokeminimumthickness_1" computerName="WINDOWS-V0000HD" duration="00:00:14.8339600" startTime="2025-03-27T08:12:39.2291616+00:00" endTime="2025-03-27T08:12:54.0628685+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4437392-80ec-4fbc-9119-e8a6fc942b51">
       <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_4-diff.png</StdOut>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_1-diff.png</StdOut>
         <ErrorInfo>
           <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_4() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 206&#xD;
+   at SfSignaturePadScripts.Feature.Strokeminimumthickness_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 346&#xD;
 
 1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
    at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.Strokecolor_4() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 206&#xD;
+   at SfSignaturePadScripts.Feature.Strokeminimumthickness_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 346&#xD;
 
 </StackTrace>
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="5948081c-b152-4c29-a194-8e7c2b6031bf" testId="f66816ac-fccc-b63f-e701-9bc49d73a2fa" testName="Save_3" computerName="windows-v0000F9" duration="00:00:18.6141260" startTime="2025-03-26T07:59:22.2532782+00:00" endTime="2025-03-26T07:59:40.8679155+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5948081c-b152-4c29-a194-8e7c2b6031bf">
+    <UnitTestResult executionId="924a8f68-5958-4749-8e23-62a3a9a8f156" testId="f8dda9aa-3654-b282-f04d-3039e4a66708" testName="Strokecolor_8" computerName="WINDOWS-V0000HD" duration="00:00:16.8772309" startTime="2025-03-27T08:11:34.5140087+00:00" endTime="2025-03-27T08:11:51.3909413+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="924a8f68-5958-4749-8e23-62a3a9a8f156">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_8-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_8() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 320&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_8() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 320&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="18d8d169-f4fd-4b27-8f4a-69d8cf9d63c5" testId="416a8415-104f-1552-35e2-41aced4bb3f1" testName="VerticalStackTesting_1" computerName="WINDOWS-V0000HD" duration="00:00:15.6642870" startTime="2025-03-27T08:13:30.6551249+00:00" endTime="2025-03-27T08:13:46.3192188+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18d8d169-f4fd-4b27-8f4a-69d8cf9d63c5">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\VerticalStackTesting_1-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.VerticalStackTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 833&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.VerticalStackTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 833&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="869cb27c-e35c-4f3b-b80a-e55872d9ea13" testId="66e33877-507a-8fec-ed84-16c6080248d8" testName="StackLayoutTesting_1" computerName="WINDOWS-V0000HD" duration="00:00:15.0150260" startTime="2025-03-27T08:09:19.9229692+00:00" endTime="2025-03-27T08:09:34.9378048+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="869cb27c-e35c-4f3b-b80a-e55872d9ea13">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\StackLayoutTesting_1-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.StackLayoutTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 815&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.StackLayoutTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 815&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="be0c3ad7-1c05-4e5a-88e3-c90f7457ff42" testId="30de4fd4-fd21-7940-dbf5-10826177efdb" testName="Strokeminimumthickness_2" computerName="WINDOWS-V0000HD" duration="00:00:17.5932240" startTime="2025-03-27T08:12:54.0653297+00:00" endTime="2025-03-27T08:13:11.6583600+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be0c3ad7-1c05-4e5a-88e3-c90f7457ff42">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_2-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokeminimumthickness_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 371&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokeminimumthickness_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 371&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="857e9c44-3a89-464a-b341-ba5d145bc96a" testId="bdf9aeec-d189-6ff9-d11b-754c10fd2745" testName="Strokecolor_3" computerName="WINDOWS-V0000HD" duration="00:00:17.5614750" startTime="2025-03-27T08:10:07.2389714+00:00" endTime="2025-03-27T08:10:24.8001747+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="857e9c44-3a89-464a-b341-ba5d145bc96a">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_3-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 178&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_3() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 178&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6cfaac42-5dce-481f-8c6d-1fc4d12ebfa2" testId="99c1b4b7-4b3b-c360-6935-b8a7fed7145b" testName="Strokecolor_1" computerName="WINDOWS-V0000HD" duration="00:00:16.0268360" startTime="2025-03-27T08:09:34.9378699+00:00" endTime="2025-03-27T08:09:50.9645008+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cfaac42-5dce-481f-8c6d-1fc4d12ebfa2">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_1-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 122&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 122&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="611542a1-3546-4e9f-94d4-76af965d7d70" testId="046ecf90-b929-32ac-35ff-6959bad1e033" testName="ClearSignature_1" computerName="WINDOWS-V0000HD" duration="00:00:16.7368549" startTime="2025-03-27T08:05:11.2417884+00:00" endTime="2025-03-27T08:05:27.9784326+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="611542a1-3546-4e9f-94d4-76af965d7d70">
       <Output>
         <StdOut>No differences found.</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="045a8efe-bebe-40f3-af62-20ed7ebdc132" testId="22d85173-6207-c3c5-91ff-183e6cea1be1" testName="ContentViewTesting_1" computerName="windows-v0000F9" duration="00:00:17.7067030" startTime="2025-03-26T07:56:12.3832092+00:00" endTime="2025-03-26T07:56:30.0902880+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="045a8efe-bebe-40f3-af62-20ed7ebdc132">
-      <Output>
-        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\ContentViewTesting_1-diff.png</StdOut>
-        <ErrorInfo>
-          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.ContentViewTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 736&#xD;
-
-1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
-   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
-   at SfSignaturePadScripts.Feature.ContentViewTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 736&#xD;
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="336908cd-760a-44aa-afb6-133a0ab99d2e" testId="d4a013af-8214-39e9-c0de-0e492e7d2d53" testName="Signature_2" computerName="windows-v0000F9" duration="00:00:17.9600670" startTime="2025-03-26T07:59:59.0399527+00:00" endTime="2025-03-26T08:00:17.0002229+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="336908cd-760a-44aa-afb6-133a0ab99d2e">
+    <UnitTestResult executionId="970f16ad-7e8b-45be-99ec-64a9fcf7f1c4" testId="d4a013af-8214-39e9-c0de-0e492e7d2d53" testName="Signature_2" computerName="WINDOWS-V0000HD" duration="00:00:16.4331250" startTime="2025-03-27T08:08:47.9808123+00:00" endTime="2025-03-27T08:09:04.4137289+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="970f16ad-7e8b-45be-99ec-64a9fcf7f1c4">
       <Output>
         <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Signature_2-diff.png</StdOut>
         <ErrorInfo>
@@ -475,170 +406,239 @@ Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITES
         </ErrorInfo>
       </Output>
     </UnitTestResult>
+    <UnitTestResult executionId="ba69ca21-a4ec-4177-9364-4b94cc542269" testId="3bc75c58-30b5-eeaf-139b-188e241e4eea" testName="Signature_1" computerName="WINDOWS-V0000HD" duration="00:00:13.9399120" startTime="2025-03-27T08:08:34.0378129+00:00" endTime="2025-03-27T08:08:47.9775560+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba69ca21-a4ec-4177-9364-4b94cc542269">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Signature_1-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Signature_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 34&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Signature_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 34&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="111e59f8-ecea-4dc0-ba6f-c66fbc287d4b" testId="70175124-4ac9-acc2-e858-fe4c5b8c6784" testName="Strokecolor_4" computerName="WINDOWS-V0000HD" duration="00:00:17.1956350" startTime="2025-03-27T08:10:24.8033652+00:00" endTime="2025-03-27T08:10:41.9987451+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="111e59f8-ecea-4dc0-ba6f-c66fbc287d4b">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_4-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_4() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 206&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Strokecolor_4() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 206&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="78e23824-87aa-432f-aabe-656658ab8ac5" testId="7feee788-ce09-8a55-04c8-f7c0da8e3daf" testName="Save_2" computerName="WINDOWS-V0000HD" duration="00:00:15.1251290" startTime="2025-03-27T08:08:01.9656011+00:00" endTime="2025-03-27T08:08:17.0906048+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78e23824-87aa-432f-aabe-656658ab8ac5">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Save_2-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Save_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 529&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.Save_2() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 529&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7cb85604-c367-433f-a2cf-d421c01ccbfa" testId="f02f0482-9e47-5331-9ec1-62e6c16a65a3" testName="HorizontalStackTesting_1" computerName="WINDOWS-V0000HD" duration="00:00:14.6866030" startTime="2025-03-27T08:07:32.0837055+00:00" endTime="2025-03-27T08:07:46.7709054+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7cb85604-c367-433f-a2cf-d421c01ccbfa">
+      <Output>
+        <StdOut>No differences found.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="07ed9e7a-0934-4354-bffb-0a7d087e3e67" testId="22d85173-6207-c3c5-91ff-183e6cea1be1" testName="ContentViewTesting_1" computerName="WINDOWS-V0000HD" duration="00:00:15.4717810" startTime="2025-03-27T08:05:27.9827879+00:00" endTime="2025-03-27T08:05:43.4542940+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07ed9e7a-0934-4354-bffb-0a7d087e3e67">
+      <Output>
+        <StdOut>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\ContentViewTesting_1-diff.png</StdOut>
+        <ErrorInfo>
+          <StackTrace>   at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.ContentViewTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 736&#xD;
+
+1)    at UITests.Shared.BaseTest.&lt;TakeAndCompareScreenshot&gt;g__Verify|8_0(String name) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 229&#xD;
+   at UITests.Shared.BaseTest.TakeAndCompareScreenshot(String name, Nullable`1 retryDelay) in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\BaseTest.cs:line 118&#xD;
+   at SfSignaturePadScripts.Feature.ContentViewTesting_1() in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Shared\Features.cs:line 736&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
   </Results>
   <TestDefinitions>
     <UnitTest name="HorizontalStackTesting_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="f02f0482-9e47-5331-9ec1-62e6c16a65a3">
-      <Execution id="6f336037-80f9-4e35-8550-5aff72670f15" />
+      <Execution id="7cb85604-c367-433f-a2cf-d421c01ccbfa" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="HorizontalStackTesting_1" />
     </UnitTest>
     <UnitTest name="GridTesting_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="badba7d3-360f-83f4-2ec9-85b55c1bada5">
-      <Execution id="c32a9e43-51c4-4b16-92d9-cda5941dd3bf" />
+      <Execution id="23df6077-bcfc-4cc7-a437-71da2693a8d3" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="GridTesting_1" />
     </UnitTest>
     <UnitTest name="Save_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="593806ff-1cc1-1968-470a-21a17418139f">
-      <Execution id="5077961c-d07d-4cc4-b314-a6e7934b202d" />
+      <Execution id="41cc5ba9-f706-4537-89ea-7f31cd9b2a8f" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Save_1" />
     </UnitTest>
     <UnitTest name="Strokemaximumthickness_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="effca500-5153-cb71-0c00-7e391cb252a9">
-      <Execution id="f6fd48f7-de3f-45b2-b8f7-de166c9e01a5" />
+      <Execution id="14a4f373-c01d-4763-829a-4ae2288b4fa3" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokemaximumthickness_1" />
     </UnitTest>
     <UnitTest name="BorderTesting_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="721e194e-0328-dfb3-6c79-a03f95e2162c">
-      <Execution id="b567045e-abeb-4693-8a32-f74b064992be" />
+      <Execution id="9aa01b0a-6425-4eec-8014-c3f770d11c57" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="BorderTesting_1" />
     </UnitTest>
     <UnitTest name="Feature_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="9d565ada-fdb8-cbdb-b2d7-29a814dc4a82">
-      <Execution id="20aa2449-8c9e-4694-9f42-068f597e6792" />
+      <Execution id="41000a02-d985-4ea6-bc8e-5b3ef3e4def6" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Feature_1" />
     </UnitTest>
     <UnitTest name="Strokecolor_7" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="7f1fc60c-b20d-f307-8a67-fc9962bea82e">
-      <Execution id="9240d2f4-6328-4931-b427-5812c56f30d7" />
+      <Execution id="75327bb7-e2bf-44f4-afd9-902b281a4146" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokecolor_7" />
     </UnitTest>
     <UnitTest name="Strokecolor_5" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="19de06d4-1512-aa57-d9e1-6ca2e8ae5c71">
-      <Execution id="6e281c7c-c5bd-498a-9681-8f517b9d1e59" />
+      <Execution id="15ef0e88-29d0-4d88-becf-362802c65daa" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokecolor_5" />
     </UnitTest>
     <UnitTest name="Strokecolor_3" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="bdf9aeec-d189-6ff9-d11b-754c10fd2745">
-      <Execution id="ba0f9d68-8be0-4542-9f57-310ea448ffac" />
+      <Execution id="857e9c44-3a89-464a-b341-ba5d145bc96a" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokecolor_3" />
     </UnitTest>
     <UnitTest name="Strokeminimumthickness_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="dd9cebf1-0c57-630a-6af4-7dce4f05ecec">
-      <Execution id="b81e1860-c555-47f6-911f-2209826c11d8" />
+      <Execution id="e4437392-80ec-4fbc-9119-e8a6fc942b51" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokeminimumthickness_1" />
     </UnitTest>
     <UnitTest name="ContentViewTesting_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="22d85173-6207-c3c5-91ff-183e6cea1be1">
-      <Execution id="045a8efe-bebe-40f3-af62-20ed7ebdc132" />
+      <Execution id="07ed9e7a-0934-4354-bffb-0a7d087e3e67" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="ContentViewTesting_1" />
     </UnitTest>
     <UnitTest name="StackLayoutTesting_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="66e33877-507a-8fec-ed84-16c6080248d8">
-      <Execution id="ca5192ad-f45d-433f-8a42-08bf6621cc90" />
+      <Execution id="869cb27c-e35c-4f3b-b80a-e55872d9ea13" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="StackLayoutTesting_1" />
     </UnitTest>
     <UnitTest name="Strokecolor_2" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="2fff5368-9723-74a1-895d-11869ea0e7ca">
-      <Execution id="d8dfb983-f01e-4270-9d57-2c1d8e8427af" />
+      <Execution id="7ba74424-72e5-40a8-9de3-84d01168e268" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokecolor_2" />
     </UnitTest>
     <UnitTest name="FrameTesting_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="8f6b5c82-4710-4ac7-81cf-79c91e849d45">
-      <Execution id="46664649-4ece-4080-b3fc-f591dcf4f9cc" />
+      <Execution id="3c49d197-2aa9-493b-9457-bab0f17a2c83" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="FrameTesting_1" />
     </UnitTest>
     <UnitTest name="Strokeminimumthickness_3" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="9394240a-5a71-72b4-4720-f7665ef7e437">
-      <Execution id="9dfd9685-8e95-4c39-b49b-d7a8f6394fac" />
+      <Execution id="cfb922df-456d-4ed4-b07e-eed13cf5c6c5" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokeminimumthickness_3" />
     </UnitTest>
     <UnitTest name="Feature_4" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="893973a4-9e17-6e3e-2818-4ceb8485340b">
-      <Execution id="20937e00-100a-4245-bebd-900ae06edc12" />
+      <Execution id="6308146b-972b-4dfa-9d6f-998286b074f4" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Feature_4" />
     </UnitTest>
     <UnitTest name="Strokeminimumthickness_2" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="30de4fd4-fd21-7940-dbf5-10826177efdb">
-      <Execution id="889a4ac8-e4cb-472b-be36-fa0068a7e716" />
+      <Execution id="be0c3ad7-1c05-4e5a-88e3-c90f7457ff42" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokeminimumthickness_2" />
     </UnitTest>
     <UnitTest name="Strokemaximumthickness_3" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="6c7107d3-e1ff-77f3-4dba-81fdbf53df7e">
-      <Execution id="00a816e1-ded9-4f1a-8dda-a914924a74b0" />
+      <Execution id="aefebf12-a054-46ea-8bb7-d482ddfe703f" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokemaximumthickness_3" />
     </UnitTest>
     <UnitTest name="Feature_3" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="5e86ad35-08f3-952e-9b04-4d4c6707ca47">
-      <Execution id="dafb0760-f871-4489-8dd0-a82194627dd1" />
+      <Execution id="8b14361e-44ca-4b9f-bbc4-2c4dafd3b1df" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Feature_3" />
     </UnitTest>
     <UnitTest name="Strokecolor_4" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="70175124-4ac9-acc2-e858-fe4c5b8c6784">
-      <Execution id="c84bc252-f317-4794-b0bb-5ff0a93d1307" />
+      <Execution id="111e59f8-ecea-4dc0-ba6f-c66fbc287d4b" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokecolor_4" />
     </UnitTest>
     <UnitTest name="Signature_3" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="898626a1-2674-5503-d7f7-f04d6937878a">
-      <Execution id="1b01f4cc-2414-46e1-abc9-05d569995ecc" />
+      <Execution id="4c895f38-cf30-4d4c-a377-a926f55d8dfb" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Signature_3" />
     </UnitTest>
     <UnitTest name="Strokecolor_8" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="f8dda9aa-3654-b282-f04d-3039e4a66708">
-      <Execution id="0335212d-a15e-423f-ae3f-98bbf2e5e222" />
+      <Execution id="924a8f68-5958-4749-8e23-62a3a9a8f156" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokecolor_8" />
     </UnitTest>
     <UnitTest name="Save_3" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="f66816ac-fccc-b63f-e701-9bc49d73a2fa">
-      <Execution id="5948081c-b152-4c29-a194-8e7c2b6031bf" />
+      <Execution id="a003710a-546a-42bc-9112-df81e28dad91" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Save_3" />
     </UnitTest>
     <UnitTest name="Strokemaximumthickness_2" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="18fddcae-1b8b-bd4f-d757-a84e185dd1dc">
-      <Execution id="b263fa3c-e9ab-4a9a-a06b-21b28274379b" />
+      <Execution id="f1e53d5e-3673-426d-9fa6-5921d5851221" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokemaximumthickness_2" />
     </UnitTest>
     <UnitTest name="ClearSignature_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="046ecf90-b929-32ac-35ff-6959bad1e033">
-      <Execution id="05cd03c8-e820-41c8-aa3a-fbd83625fb49" />
+      <Execution id="611542a1-3546-4e9f-94d4-76af965d7d70" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="ClearSignature_1" />
     </UnitTest>
     <UnitTest name="Strokecolor_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="99c1b4b7-4b3b-c360-6935-b8a7fed7145b">
-      <Execution id="ad800064-ad4e-4c06-8b14-8efb2aad0ccb" />
+      <Execution id="6cfaac42-5dce-481f-8c6d-1fc4d12ebfa2" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokecolor_1" />
     </UnitTest>
     <UnitTest name="Signature_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="3bc75c58-30b5-eeaf-139b-188e241e4eea">
-      <Execution id="ef861832-46e6-4810-aa93-b8c5e0a80c83" />
+      <Execution id="ba69ca21-a4ec-4177-9364-4b94cc542269" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Signature_1" />
     </UnitTest>
     <UnitTest name="Save_2" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="7feee788-ce09-8a55-04c8-f7c0da8e3daf">
-      <Execution id="3f2f8ef9-2b99-4e6b-be6e-bd5775134b5f" />
+      <Execution id="78e23824-87aa-432f-aabe-656658ab8ac5" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Save_2" />
     </UnitTest>
     <UnitTest name="Feature_2" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="3a89b028-7200-ed89-fea1-c967e4254e4f">
-      <Execution id="52c27885-5ca8-4752-b749-1968abd087e7" />
+      <Execution id="cf148f84-292e-40d7-b6eb-f23f68548806" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Feature_2" />
     </UnitTest>
     <UnitTest name="VerticalStackTesting_1" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="416a8415-104f-1552-35e2-41aced4bb3f1">
-      <Execution id="b3c60eee-3bd7-425e-8702-51eadab9a037" />
+      <Execution id="18d8d169-f4fd-4b27-8f4a-69d8cf9d63c5" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="VerticalStackTesting_1" />
     </UnitTest>
     <UnitTest name="Strokecolor_6" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="899f05fe-ab13-2cd6-acd6-6f383c5e9425">
-      <Execution id="ae3614f1-d026-44e4-b3cc-9ec1633980a0" />
+      <Execution id="ace3b81f-2586-49c7-8327-beedccf264f2" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Strokecolor_6" />
     </UnitTest>
     <UnitTest name="Signature_2" storage="d:\a\test\sfsignaturepad-maui-tests\uitest\appium\sfsignaturepadsample\uitests.windows\bin\debug\net9.0\uitests.windows.dll" id="d4a013af-8214-39e9-c0de-0e492e7d2d53">
-      <Execution id="336908cd-760a-44aa-afb6-133a0ab99d2e" />
+      <Execution id="970f16ad-7e8b-45be-99ec-64a9fcf7f1c4" />
       <TestMethod codeBase="D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll" adapterTypeName="executor://nunit3testexecutor/" className="SfSignaturePadScripts.Feature(Windows)" name="Signature_2" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="3a89b028-7200-ed89-fea1-c967e4254e4f" executionId="52c27885-5ca8-4752-b749-1968abd087e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="2fff5368-9723-74a1-895d-11869ea0e7ca" executionId="d8dfb983-f01e-4270-9d57-2c1d8e8427af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="9394240a-5a71-72b4-4720-f7665ef7e437" executionId="9dfd9685-8e95-4c39-b49b-d7a8f6394fac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="effca500-5153-cb71-0c00-7e391cb252a9" executionId="f6fd48f7-de3f-45b2-b8f7-de166c9e01a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="bdf9aeec-d189-6ff9-d11b-754c10fd2745" executionId="ba0f9d68-8be0-4542-9f57-310ea448ffac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="7feee788-ce09-8a55-04c8-f7c0da8e3daf" executionId="3f2f8ef9-2b99-4e6b-be6e-bd5775134b5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="30de4fd4-fd21-7940-dbf5-10826177efdb" executionId="889a4ac8-e4cb-472b-be36-fa0068a7e716" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="046ecf90-b929-32ac-35ff-6959bad1e033" executionId="05cd03c8-e820-41c8-aa3a-fbd83625fb49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="3bc75c58-30b5-eeaf-139b-188e241e4eea" executionId="ef861832-46e6-4810-aa93-b8c5e0a80c83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f02f0482-9e47-5331-9ec1-62e6c16a65a3" executionId="6f336037-80f9-4e35-8550-5aff72670f15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="898626a1-2674-5503-d7f7-f04d6937878a" executionId="1b01f4cc-2414-46e1-abc9-05d569995ecc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="721e194e-0328-dfb3-6c79-a03f95e2162c" executionId="b567045e-abeb-4693-8a32-f74b064992be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="19de06d4-1512-aa57-d9e1-6ca2e8ae5c71" executionId="6e281c7c-c5bd-498a-9681-8f517b9d1e59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="badba7d3-360f-83f4-2ec9-85b55c1bada5" executionId="c32a9e43-51c4-4b16-92d9-cda5941dd3bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="5e86ad35-08f3-952e-9b04-4d4c6707ca47" executionId="dafb0760-f871-4489-8dd0-a82194627dd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="893973a4-9e17-6e3e-2818-4ceb8485340b" executionId="20937e00-100a-4245-bebd-900ae06edc12" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="899f05fe-ab13-2cd6-acd6-6f383c5e9425" executionId="ae3614f1-d026-44e4-b3cc-9ec1633980a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="6c7107d3-e1ff-77f3-4dba-81fdbf53df7e" executionId="00a816e1-ded9-4f1a-8dda-a914924a74b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="593806ff-1cc1-1968-470a-21a17418139f" executionId="5077961c-d07d-4cc4-b314-a6e7934b202d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="18fddcae-1b8b-bd4f-d757-a84e185dd1dc" executionId="b263fa3c-e9ab-4a9a-a06b-21b28274379b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="66e33877-507a-8fec-ed84-16c6080248d8" executionId="ca5192ad-f45d-433f-8a42-08bf6621cc90" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f8dda9aa-3654-b282-f04d-3039e4a66708" executionId="0335212d-a15e-423f-ae3f-98bbf2e5e222" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="99c1b4b7-4b3b-c360-6935-b8a7fed7145b" executionId="ad800064-ad4e-4c06-8b14-8efb2aad0ccb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="416a8415-104f-1552-35e2-41aced4bb3f1" executionId="b3c60eee-3bd7-425e-8702-51eadab9a037" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="dd9cebf1-0c57-630a-6af4-7dce4f05ecec" executionId="b81e1860-c555-47f6-911f-2209826c11d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="7f1fc60c-b20d-f307-8a67-fc9962bea82e" executionId="9240d2f4-6328-4931-b427-5812c56f30d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8f6b5c82-4710-4ac7-81cf-79c91e849d45" executionId="46664649-4ece-4080-b3fc-f591dcf4f9cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="9d565ada-fdb8-cbdb-b2d7-29a814dc4a82" executionId="20aa2449-8c9e-4694-9f42-068f597e6792" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="70175124-4ac9-acc2-e858-fe4c5b8c6784" executionId="c84bc252-f317-4794-b0bb-5ff0a93d1307" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f66816ac-fccc-b63f-e701-9bc49d73a2fa" executionId="5948081c-b152-4c29-a194-8e7c2b6031bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="22d85173-6207-c3c5-91ff-183e6cea1be1" executionId="045a8efe-bebe-40f3-af62-20ed7ebdc132" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="d4a013af-8214-39e9-c0de-0e492e7d2d53" executionId="336908cd-760a-44aa-afb6-133a0ab99d2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f1fc60c-b20d-f307-8a67-fc9962bea82e" executionId="75327bb7-e2bf-44f4-afd9-902b281a4146" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="593806ff-1cc1-1968-470a-21a17418139f" executionId="41cc5ba9-f706-4537-89ea-7f31cd9b2a8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="badba7d3-360f-83f4-2ec9-85b55c1bada5" executionId="23df6077-bcfc-4cc7-a437-71da2693a8d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="721e194e-0328-dfb3-6c79-a03f95e2162c" executionId="9aa01b0a-6425-4eec-8014-c3f770d11c57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c7107d3-e1ff-77f3-4dba-81fdbf53df7e" executionId="aefebf12-a054-46ea-8bb7-d482ddfe703f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19de06d4-1512-aa57-d9e1-6ca2e8ae5c71" executionId="15ef0e88-29d0-4d88-becf-362802c65daa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="899f05fe-ab13-2cd6-acd6-6f383c5e9425" executionId="ace3b81f-2586-49c7-8327-beedccf264f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a89b028-7200-ed89-fea1-c967e4254e4f" executionId="cf148f84-292e-40d7-b6eb-f23f68548806" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="893973a4-9e17-6e3e-2818-4ceb8485340b" executionId="6308146b-972b-4dfa-9d6f-998286b074f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18fddcae-1b8b-bd4f-d757-a84e185dd1dc" executionId="f1e53d5e-3673-426d-9fa6-5921d5851221" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f6b5c82-4710-4ac7-81cf-79c91e849d45" executionId="3c49d197-2aa9-493b-9457-bab0f17a2c83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e86ad35-08f3-952e-9b04-4d4c6707ca47" executionId="8b14361e-44ca-4b9f-bbc4-2c4dafd3b1df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9394240a-5a71-72b4-4720-f7665ef7e437" executionId="cfb922df-456d-4ed4-b07e-eed13cf5c6c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="effca500-5153-cb71-0c00-7e391cb252a9" executionId="14a4f373-c01d-4763-829a-4ae2288b4fa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="898626a1-2674-5503-d7f7-f04d6937878a" executionId="4c895f38-cf30-4d4c-a377-a926f55d8dfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2fff5368-9723-74a1-895d-11869ea0e7ca" executionId="7ba74424-72e5-40a8-9de3-84d01168e268" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f66816ac-fccc-b63f-e701-9bc49d73a2fa" executionId="a003710a-546a-42bc-9112-df81e28dad91" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d565ada-fdb8-cbdb-b2d7-29a814dc4a82" executionId="41000a02-d985-4ea6-bc8e-5b3ef3e4def6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd9cebf1-0c57-630a-6af4-7dce4f05ecec" executionId="e4437392-80ec-4fbc-9119-e8a6fc942b51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8dda9aa-3654-b282-f04d-3039e4a66708" executionId="924a8f68-5958-4749-8e23-62a3a9a8f156" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="416a8415-104f-1552-35e2-41aced4bb3f1" executionId="18d8d169-f4fd-4b27-8f4a-69d8cf9d63c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66e33877-507a-8fec-ed84-16c6080248d8" executionId="869cb27c-e35c-4f3b-b80a-e55872d9ea13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30de4fd4-fd21-7940-dbf5-10826177efdb" executionId="be0c3ad7-1c05-4e5a-88e3-c90f7457ff42" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bdf9aeec-d189-6ff9-d11b-754c10fd2745" executionId="857e9c44-3a89-464a-b341-ba5d145bc96a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99c1b4b7-4b3b-c360-6935-b8a7fed7145b" executionId="6cfaac42-5dce-481f-8c6d-1fc4d12ebfa2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="046ecf90-b929-32ac-35ff-6959bad1e033" executionId="611542a1-3546-4e9f-94d4-76af965d7d70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4a013af-8214-39e9-c0de-0e492e7d2d53" executionId="970f16ad-7e8b-45be-99ec-64a9fcf7f1c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bc75c58-30b5-eeaf-139b-188e241e4eea" executionId="ba69ca21-a4ec-4177-9364-4b94cc542269" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70175124-4ac9-acc2-e858-fe4c5b8c6784" executionId="111e59f8-ecea-4dc0-ba6f-c66fbc287d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7feee788-ce09-8a55-04c8-f7c0da8e3daf" executionId="78e23824-87aa-432f-aabe-656658ab8ac5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f02f0482-9e47-5331-9ec1-62e6c16a65a3" executionId="7cb85604-c367-433f-a2cf-d421c01ccbfa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22d85173-6207-c3c5-91ff-183e6cea1be1" executionId="07ed9e7a-0934-4354-bffb-0a7d087e3e67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
@@ -650,203 +650,203 @@ Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITES
       <StdOut>NUnit Adapter 4.5.0.0: Test execution started&#xD;
 Running all tests in D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\bin\Debug\net9.0\UITests.Windows.dll&#xD;
    NUnit3TestExecutor discovered 32 of 32 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:55:32 AM FixtureSetup for Feature(Windows)&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:55:32 AM BorderTesting_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:55:44 AM BorderTesting_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:55:49 AM ClearSignature_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:56:05 AM ClearSignature_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:56:12 AM ContentViewTesting_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:56:24 AM ContentViewTesting_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:56:30 AM Feature_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:56:45 AM Feature_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:56:51 AM Feature_2 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:57:05 AM Feature_2 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:57:12 AM Feature_3 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:57:29 AM Feature_3 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:57:38 AM Feature_4 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:57:55 AM Feature_4 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:58:01 AM FrameTesting_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:58:11 AM FrameTesting_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:58:16 AM GridTesting_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:58:26 AM GridTesting_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:58:32 AM HorizontalStackTesting_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:58:43 AM HorizontalStackTesting_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:58:48 AM Save_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:59:00 AM Save_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:59:05 AM Save_2 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:59:16 AM Save_2 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:59:22 AM Save_3 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:59:33 AM Save_3 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:59:40 AM Signature_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:59:52 AM Signature_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 7:59:59 AM Signature_2 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:00:10 AM Signature_2 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:00:17 AM Signature_3 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:00:29 AM Signature_3 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:00:35 AM StackLayoutTesting_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:00:45 AM StackLayoutTesting_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:00:51 AM Strokecolor_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:01:03 AM Strokecolor_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:01:08 AM Strokecolor_2 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:01:20 AM Strokecolor_2 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:01:25 AM Strokecolor_3 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:01:37 AM Strokecolor_3 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:01:45 AM Strokecolor_4 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:01:57 AM Strokecolor_4 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:02:02 AM Strokecolor_5 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:02:14 AM Strokecolor_5 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:02:20 AM Strokecolor_6 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:02:32 AM Strokecolor_6 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:02:37 AM Strokecolor_7 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:02:50 AM Strokecolor_7 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:02:55 AM Strokecolor_8 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:03:08 AM Strokecolor_8 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:03:13 AM Strokemaximumthickness_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:03:24 AM Strokemaximumthickness_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:03:29 AM Strokemaximumthickness_2 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:03:40 AM Strokemaximumthickness_2 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:03:47 AM Strokemaximumthickness_3 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:03:57 AM Strokemaximumthickness_3 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:04:02 AM Strokeminimumthickness_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:04:13 AM Strokeminimumthickness_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:04:18 AM Strokeminimumthickness_2 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:04:31 AM Strokeminimumthickness_2 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:04:37 AM Strokeminimumthickness_3 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:04:50 AM Strokeminimumthickness_3 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:04:55 AM VerticalStackTesting_1 Start&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:05:05 AM VerticalStackTesting_1 Stop&#xD;
-&gt;&gt;&gt;&gt;&gt; 3/26/2025 8:05:11 AM FixtureTeardown for Feature(Windows)&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:04:52 AM FixtureSetup for Feature(Windows)&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:04:52 AM BorderTesting_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:05:06 AM BorderTesting_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:05:11 AM ClearSignature_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:05:23 AM ClearSignature_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:05:27 AM ContentViewTesting_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:05:38 AM ContentViewTesting_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:05:43 AM Feature_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:05:55 AM Feature_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:06:00 AM Feature_2 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:06:12 AM Feature_2 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:06:17 AM Feature_3 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:06:31 AM Feature_3 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:06:35 AM Feature_4 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:06:52 AM Feature_4 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:06:59 AM FrameTesting_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:07:10 AM FrameTesting_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:07:15 AM GridTesting_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:07:27 AM GridTesting_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:07:32 AM HorizontalStackTesting_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:07:42 AM HorizontalStackTesting_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:07:46 AM Save_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:07:57 AM Save_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:08:01 AM Save_2 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:08:12 AM Save_2 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:08:17 AM Save_3 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:08:28 AM Save_3 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:08:34 AM Signature_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:08:43 AM Signature_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:08:47 AM Signature_2 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:08:57 AM Signature_2 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:09:04 AM Signature_3 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:09:15 AM Signature_3 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:09:19 AM StackLayoutTesting_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:09:29 AM StackLayoutTesting_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:09:34 AM Strokecolor_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:09:45 AM Strokecolor_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:09:50 AM Strokecolor_2 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:10:02 AM Strokecolor_2 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:10:07 AM Strokecolor_3 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:10:19 AM Strokecolor_3 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:10:24 AM Strokecolor_4 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:10:37 AM Strokecolor_4 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:10:41 AM Strokecolor_5 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:10:54 AM Strokecolor_5 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:10:59 AM Strokecolor_6 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:11:10 AM Strokecolor_6 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:11:18 AM Strokecolor_7 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:11:29 AM Strokecolor_7 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:11:34 AM Strokecolor_8 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:11:46 AM Strokecolor_8 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:11:51 AM Strokemaximumthickness_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:12:02 AM Strokemaximumthickness_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:12:06 AM Strokemaximumthickness_2 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:12:18 AM Strokemaximumthickness_2 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:12:24 AM Strokemaximumthickness_3 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:12:34 AM Strokemaximumthickness_3 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:12:39 AM Strokeminimumthickness_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:12:49 AM Strokeminimumthickness_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:12:54 AM Strokeminimumthickness_2 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:13:06 AM Strokeminimumthickness_2 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:13:11 AM Strokeminimumthickness_3 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:13:23 AM Strokeminimumthickness_3 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:13:30 AM VerticalStackTesting_1 Start&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:13:40 AM VerticalStackTesting_1 Stop&#xD;
+&gt;&gt;&gt;&gt;&gt; 3/27/2025 8:13:46 AM FixtureTeardown for Feature(Windows)&#xD;
 NUnit Adapter 4.5.0.0: Test execution complete&#xD;
 </StdOut>
     </Output>
     <RunInfos>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:55:49.6967152+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:05:11.2831946+00:00">
         <Text>Directory created &#xD;
 Diff Directory created &#xD;
 Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\BorderTesting_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:56:12.3632240+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:05:27.9795719+00:00">
         <Text>No differences found.&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:56:30.0921791+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:05:43.4555701+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\ContentViewTesting_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:56:51.6728764+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:06:00.6284455+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:57:12.2272430+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:06:17.7434532+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_2-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:57:38.0915202+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:06:35.8600723+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_3-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:58:01.3948332+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:06:59.9872487+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Feature_4-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:58:16.2314435+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:07:15.4636942+00:00">
         <Text>No differences found.&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:58:32.3230157+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:07:32.0823358+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\GridTesting_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:58:48.5209635+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:07:46.7716174+00:00">
         <Text>No differences found.&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:59:05.8870405+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:08:01.9652698+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Save_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:59:22.2471090+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:08:17.0912487+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Save_2-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:59:40.8689668+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:08:34.0383094+00:00">
         <Text>No differences found.&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T07:59:59.0384977+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:08:47.9783680+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Signature_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:00:17.0011856+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:09:04.4144388+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Signature_2-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:00:35.0819184+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:09:19.9201675+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Signature_3-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:00:51.2890557+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:09:34.9384505+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\StackLayoutTesting_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:01:08.6709372+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:09:50.9651056+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:01:25.1901700+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:10:07.2371338+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_2-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:01:45.0080144+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:10:24.8007297+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_3-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:02:02.2804193+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:10:41.9992541+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_4-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:02:20.3081309+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:10:59.3271012+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_5-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:02:37.9955160+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:11:18.1139051+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_6-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:02:55.3227032+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:11:34.5133906+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_7-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:03:13.6191926+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:11:51.3930721+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokecolor_8-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:03:29.8111043+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:12:06.7335512+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokemaximumthickness_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:03:47.3577866+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:12:24.0240576+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokemaximumthickness_2-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:04:02.6980634+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:12:39.2264917+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokemaximumthickness_3-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:04:18.5709705+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:12:54.0633985+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_1-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:04:37.6925365+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:13:11.6589006+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_2-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:04:55.3551686+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:13:30.6544590+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\Strokeminimumthickness_3-diff.png&#xD;
 </Text>
       </RunInfo>
-      <RunInfo computerName="windows-v0000F9" outcome="Warning" timestamp="2025-03-26T08:05:11.4939648+00:00">
+      <RunInfo computerName="WINDOWS-V0000HD" outcome="Warning" timestamp="2025-03-27T08:13:46.3198550+00:00">
         <Text>Differences found! Diff image saved at D:\A\Test\SfSignaturePad-MAUI-tests\UITEST\Appium\SfSignaturePadSample\UITests.Windows\Images\snapshots-diff\VerticalStackTesting_1-diff.png&#xD;
 </Text>
       </RunInfo>
