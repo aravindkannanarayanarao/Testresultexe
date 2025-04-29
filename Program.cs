@@ -13,14 +13,7 @@ class Program
         {
             return new List<string>()
             {
-                "SfAutocomplete",
-                "SfBarcode",
-                "SfButton",
-                "SfChip",
-                "SfListView",
-                "SfMaps",
-                "SfRating",
-                "SfSignaturePad"
+                "SfComboBox",
             };
         }
     }
@@ -64,7 +57,6 @@ class Program
 
         }
     }
-
     static List<string> ExtractExistingVersions(string filePath)
     {
         List<string> existingVersions = new List<string>();
@@ -85,7 +77,6 @@ class Program
         }
         return existingVersions;
     }
-
     static void CreateVersionFolder(string baseDirectory, string version, List<string> controls)
     {
         string versionPath = Path.Combine(baseDirectory, version);
@@ -107,7 +98,6 @@ class Program
         Console.WriteLine("Version folder created: " + versionPath);
         Console.WriteLine("Controls included: " + string.Join(", ", controls.Concat(userControls)));
     }
-
     static void GenerateXMLFileForControls(string pathxml, string baseDirectory, string version, List<string> controls)
     {
         foreach (var control in controls)
@@ -245,68 +235,6 @@ class Program
         htmlcontent.AppendLine("</html>");
         File.WriteAllText(Path.Combine(versionPath, "index.html"), htmlcontent.ToString());
     }
-
-
-    //static void CreateVersionIndex(string versionPath, string version, List<string> controls, int total, int pass, int fail, int skipped)
-    //{
-    //    StringBuilder htmlcontent = new StringBuilder();
-
-    //    htmlcontent.AppendLine("<!DOCTYPE html>");
-    //    htmlcontent.AppendLine("<html lang=\"en\">");
-    //    htmlcontent.AppendLine("<head>");
-    //    htmlcontent.AppendLine("    <meta charset=\"UTF-8\">");
-    //    htmlcontent.AppendLine("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
-    //    htmlcontent.AppendLine("    <title>MAUI Syncfusion Controls - Test Reports</title>");
-    //    htmlcontent.AppendLine("    <style>");
-    //    htmlcontent.AppendLine("        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }");
-    //    htmlcontent.AppendLine("        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }");
-    //    htmlcontent.AppendLine("        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }");
-    //    htmlcontent.AppendLine("        th { background-color: #007bff; color: white; }");
-    //    htmlcontent.AppendLine("        .passed { color: green; font-weight: bold; }");
-    //    htmlcontent.AppendLine("        .failed { color: red; font-weight: bold; }");
-    //    htmlcontent.AppendLine("        .skipped { color: orange; font-weight: bold; }");
-    //    htmlcontent.AppendLine("        a { text-decoration: none; color: #007bff; font-weight: bold; }");
-    //    htmlcontent.AppendLine("        a:hover { text-decoration: underline; }");
-    //    htmlcontent.AppendLine("    </style>");
-    //    htmlcontent.AppendLine("</head>");
-    //    htmlcontent.AppendLine("<body>");
-    //    htmlcontent.AppendLine($"    <h2 style=\"text-align: center;\">MAUI Syncfusion Controls - Test Reports (Version {version})</h2>");
-    //    htmlcontent.AppendLine("    <h3>Test Summary</h3>");
-    //    htmlcontent.AppendLine("    <table>");
-    //    htmlcontent.AppendLine("        <thead>");
-    //    htmlcontent.AppendLine("            <tr>");
-    //    htmlcontent.AppendLine("                <th>Control Name</th>");
-    //    htmlcontent.AppendLine("                <th>Test Cases</th>");
-    //    htmlcontent.AppendLine("                <th>Passed</th>");
-    //    htmlcontent.AppendLine("                <th>Failed</th>");
-    //    htmlcontent.AppendLine("                <th>Skipped</th>");
-    //    htmlcontent.AppendLine("            </tr>");
-    //    htmlcontent.AppendLine("        </thead>");
-    //    htmlcontent.AppendLine("        <tbody>");
-
-    //    foreach (var control in controls)
-    //    {
-    //        htmlcontent.AppendLine($@"            <tr>
-    //            <td><a href='{control}.html'>{control}</a></td>
-    //            <td>{total}</td>
-    //            <td class='passed'>{pass}</td>
-    //            <td class='failed'>{fail}</td>
-    //            <td class='skipped'>{skipped}</td>
-    //        </tr>");
-    //    }
-
-    //    htmlcontent.AppendLine("        </tbody>");
-    //    htmlcontent.AppendLine("    </table>");
-    //    htmlcontent.AppendLine("</body>");
-    //    htmlcontent.AppendLine("</html>");
-
-    //    File.WriteAllText(Path.Combine(versionPath, "index.html"), htmlcontent.ToString());
-    //}
-
-
-
-
-
     static string GenerateHtmlReport(int totalTests, int passedTests, int failedTests, int skippedTests, double totalDuration, Dictionary<string, (int total, int passed, int failed, int skipped)> controlResults)
     {
 
